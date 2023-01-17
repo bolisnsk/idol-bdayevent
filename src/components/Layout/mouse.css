@@ -1,0 +1,19 @@
+.circle { 
+
+    position: absolute;
+
+    top: 0; 
+
+    left: 0; 
+
+    width: 150px;
+
+    height: 150px;
+
+    border-radius: 50%; 
+
+    background-color: #e493de;
+
+    transform: translate(-50%, -50%); 
+
+}

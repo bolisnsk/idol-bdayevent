@@ -1,0 +1,9 @@
+body{
+    cursor: none;
+}
+
+.mark{
+    left: 300px;
+    top: 50px;
+    position: relative;
+}
