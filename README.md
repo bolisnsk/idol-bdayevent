@@ -1,7 +1,7 @@
 # 아이돌 이벤트 정보 제공 사이트
 
      요구사항
-     PyCharm
+     PyCharm(선택, 필수는 아니지만 권장)
      Python 3.10
      Virtual Environment
      Pip Installs Packages(pip)
