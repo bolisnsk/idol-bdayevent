@@ -6,6 +6,8 @@
      ③ pip install django-cors-headers
      ④ pip install pillow
      
+
+     
      주소
      ① ViewSet
      http://127.0.0.1:8000/categorys/
