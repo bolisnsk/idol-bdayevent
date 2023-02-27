@@ -6,7 +6,7 @@
      Virtual Environment
      Pip Installs Packages(pip)
      
-     설치
+     설치 명령어
      ① pip install django | pip install djangorestframework
      ② pip install django-filter
      ③ pip install django-cors-headers
