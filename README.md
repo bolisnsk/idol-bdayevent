@@ -34,7 +34,7 @@
     ?search=(제목, 주소) # 검색
     ?category=(Category_id), ?pk=(pk) # 필터
     
-    명령어
+    기타 명령어
     python manage.py runserver # 웹 실행
     python manage.py makemigrations # 데이터베이스 생성
     python manage.py migrate # 데이터베이스 적용
