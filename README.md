@@ -19,19 +19,19 @@
      http://127.0.0.1:8000/near_and_dear/post/
      http://127.0.0.1:8000/near_and_dear/post/(포스터 번호:pk)
     
-    ?search=(제목, 주소) # 검색
-    ?category=(Category_id), ?pk=(pk) # 필터
+     ?search=(제목, 주소) # 검색
+     ?category=(Category_id), ?pk=(pk) # 필터
     
-    ② Admin
-    http://127.0.0.1:8000/admin/
+     ② Admin
+     http://127.0.0.1:8000/admin/
 
-    기타 명령어
-    python manage.py runserver # 웹 실행
-    python manage.py makemigrations # 데이터베이스 생성
-    python manage.py migrate # 데이터베이스 적용
-    python manage.py createsuperuser # 관리자 계정 생성
-    (제가 만든 계정 → ID : admin | PW : admin1234)
+     기타 명령어
+     python manage.py runserver # 웹 실행
+     python manage.py makemigrations # 데이터베이스 생성
+     python manage.py migrate # 데이터베이스 적용
+     python manage.py createsuperuser # 관리자 계정 생성
+     (제가 만든 계정 → ID : admin | PW : admin1234)
      
-    데이터베이스 초기화
-    ① db.sqlite3 삭제, migrations 폴더에 __init__.py를 제외한 모든 파일 삭제.
-    ② python manage.py makemigrations, python manage.py migrate 실행.
+     데이터베이스 초기화
+     ① db.sqlite3 삭제, migrations 폴더에 __init__.py를 제외한 모든 파일 삭제.
+     ② python manage.py makemigrations, python manage.py migrate 실행.
