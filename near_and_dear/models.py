@@ -7,6 +7,7 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+
 class Post(models.Model):
     title = models.CharField(max_length=128)
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, blank=True, null=True)
@@ -23,3 +24,6 @@ class Post(models.Model):
 
     class Meta:
         ordering = ['id']
+
+    def __str__(self):
+        return self.title
