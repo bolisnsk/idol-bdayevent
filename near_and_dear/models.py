@@ -26,7 +26,7 @@ class Post(models.Model):
     close_time = models.TimeField()
 
     class Meta:
-        ordering = ['id']
+        ordering = ['-id']
 
     def __str__(self):
         return self.title
