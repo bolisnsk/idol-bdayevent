@@ -21,7 +21,7 @@ class CategoryAPIGenerics(RetrieveUpdateDestroyAPIView):
     serializer_class = CategorySerializer
 
 class PostResultsSetPagination(LimitOffsetPagination):
-    page_size = 4
+    default_limit = 4
 
 class PostListAPIGenerics(ListCreateAPIView):
     queryset = Post.objects.all()
