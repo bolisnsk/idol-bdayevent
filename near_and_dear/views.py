@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
-from rest_framework.pagination import PageNumberPagination
+from rest_framework.pagination import PageNumberPagination, LimitOffsetPagination
 
 from near_and_dear.models import Category, Post
 from near_and_dear.serializers import CategorySerializer, PostListSerializer, PostSerializer
@@ -20,7 +20,7 @@ class CategoryAPIGenerics(RetrieveUpdateDestroyAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
 
-class PostResultsSetPagination(PageNumberPagination):
+class PostResultsSetPagination(LimitOffsetPagination):
     page_size = 4
 
 class PostListAPIGenerics(ListCreateAPIView):
