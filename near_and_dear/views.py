@@ -42,10 +42,10 @@ class PostListAPIGenerics(ListCreateAPIView):
 
         if search:
             queryset = super().filter_queryset(queryset)
-            queryset = sorted(queryset, key=sort_by_token_ratio, reverse=True)
             for number in queryset:
                 score = max(sort_by_token_ratio(number))
-                print(f"검색어: {search} | 게시물: {number.title} | 주소: {number.address} | 점수: {score}")
+                if score < 100:
+                    print(f"검색어: {search} | 게시물: {number.title} | 주소: {number.address} | 점수: {score}")
 #   Lamda - queryset = sorted(queryset, key=lambda post: fuzz.token_set_ratio(search, post.title), reverse=True)
             queryset = [post for post in queryset if max(sort_by_token_ratio(post)) >= 100]
         return queryset
