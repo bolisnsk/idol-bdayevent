@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter
-from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
+from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView, ListAPIView
 from rest_framework.pagination import PageNumberPagination, LimitOffsetPagination
 from fuzzywuzzy import fuzz
 
@@ -24,7 +24,7 @@ class CategoryAPIGenerics(RetrieveUpdateDestroyAPIView):
 class PostResultsSetPagination(LimitOffsetPagination):
     default_limit = 4
 
-class PostListAPIGenerics(ListCreateAPIView):
+class PostListAPIGenerics(ListAPIView):
     queryset = Post.objects.all()
     serializer_class = PostListSerializer
     pagination_class = PostResultsSetPagination
@@ -35,7 +35,7 @@ class PostListAPIGenerics(ListCreateAPIView):
     def filter_queryset(self, queryset):
         search = self.request.query_params.get('search', None)
 
-        def sort_by_token_ratio(post):
+        def search_by_token_ratio(post):
             titleScore = fuzz.token_set_ratio(search, post.title)*1.2
             addressScore = fuzz.token_set_ratio(search, post.address)*10
             return titleScore, addressScore
@@ -43,12 +43,20 @@ class PostListAPIGenerics(ListCreateAPIView):
         if search:
             queryset = super().filter_queryset(queryset)
             for number in queryset:
-                score = max(sort_by_token_ratio(number))
-                if score < 100:
+                score = max(search_by_token_ratio(number))
+                if score < 95:
                     print(f"검색어: {search} | 게시물: {number.title} | 주소: {number.address} | 점수: {score}")
 #   Lamda - queryset = sorted(queryset, key=lambda post: fuzz.token_set_ratio(search, post.title), reverse=True)
-            queryset = [post for post in queryset if max(sort_by_token_ratio(post)) >= 95]
+            queryset = [post for post in queryset if max(search_by_token_ratio(post)) >= 95]
         return queryset
+
+    # def get_queryset(self):
+    #     queryset = Post.objects.all()
+    #     keyword = self.request.query_params.get('search')
+    # if keyword:
+    #     queryset = queryset.filter(search_name=keyword)
+    #     # queryset = queryset.filter(Q(title__icontains=keyword) | Q(content__icontains=keyword))
+    # return queryset
 
 
 class PostAPIGenerics(RetrieveUpdateDestroyAPIView):
