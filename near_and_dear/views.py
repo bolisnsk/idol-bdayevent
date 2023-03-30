@@ -46,7 +46,6 @@ class PostListAPIGenerics(ListAPIView):
                 score = max(search_by_token_ratio(number))
                 if score < 95:
                     print(f"검색어: {search} | 게시물: {number.title} | 주소: {number.address} | 점수: {score}")
-#   Lamda - queryset = sorted(queryset, key=lambda post: fuzz.token_set_ratio(search, post.title), reverse=True)
             queryset = [post for post in queryset if max(search_by_token_ratio(post)) >= 95]
         return queryset
 
