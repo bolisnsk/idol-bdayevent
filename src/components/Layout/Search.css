@@ -1,0 +1,111 @@
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #b72de1; /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(202, 33, 244, 0.1);  /*스크롤바 뒷 배경 색상*/
+}
+.header{
+    margin: 0px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    animation: fadeInDown 1s;
+    
+}
+
+.box{
+    background-image: url(./45.jpg);
+    font-family: 'Playfair Display', serif;
+    background-size: cover;
+    height: 1300px;
+    background-repeat : no-repeat;
+}
+
+.logo {
+    width: 100px;
+    height: 80px;
+    margin: 30px;
+}
+
+.content{
+    display: block;
+    margin-left: 320px;
+    margin-right: 320px;
+    font-size: 24px;
+    background: #fff8f8;
+    border-radius: 30px;
+    height: 1100px;
+    padding-top: 60px;
+    
+}
+
+.fillter{
+    margin-bottom: 40px;
+}
+
+.list{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.cn {
+    display: block;
+    font-style: bold;
+    font-size: 24px;
+    align-content: center;
+    justify-content: center;
+}
+
+.ctitle{
+    display: block;
+    margin-top: 20px;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 300;
+}
+
+table{
+    margin-top: 20px;
+    align-items: center;
+    width : 100%px;
+    height: 80%;
+    font-size: 22px;
+    
+}
+
+td {
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+  
+}
+
+.ca{
+    margin-left: 30px;
+}
+
+.border{
+    border-bottom: solid black 1px;
+    
+}
+
+@media screen and (max-width:780px){
+    .content{
+       margin: 0px;
+    }
+
+}

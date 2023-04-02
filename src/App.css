@@ -1,5 +1,6 @@
 body{
-    cursor: none;
+    margin: 0;
+    overflow-x: hidden
 }
 
 .mark{
@@ -7,3 +8,76 @@ body{
     top: 50px;
     position: relative;
 }
+
+.cursor{ 
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  background: rgba(255, 255, 255, 0.05);
+  position: absolute;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  z-index: 9;
+  width: 60px;
+
+  will-change: left;
+  will-change: top;
+}
+
+.pointer {
+  position: absolute;
+
+  top: 0; 
+
+  left: 0; 
+
+  width: 150px; 
+
+  height: 150px; 
+
+  border-radius: 50%; 
+
+  background-color: #9bf50b; 
+
+  transform: translate(-50%, -50%); 
+
+}
+
+.outer {
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  /* 화면에서 스크롤바 안보이게 */
+  .outer::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .inner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;
+  }
+
+  /*.container::-webkit-scrollbar {
+    display: none;
+  }*/
+  
+  .mount1{ animation: 0.7s ease-in-out loadEffect1; }
+
+@keyframes loadEffect1 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+  

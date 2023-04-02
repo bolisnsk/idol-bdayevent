@@ -1,19 +1,25 @@
-.circle { 
+.scroll__container{
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    z-index: 1;
+  }
 
-    position: absolute;
+  #top{
+    font-weight: bold;
+    font-size: 16px;
+    padding : 16px 16px;
+    color: black;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
 
-    top: 0; 
-
-    left: 0; 
-
-    width: 150px;
-
-    height: 150px;
-
-    border-radius: 50%; 
-
-    background-color: #e493de;
-
-    transform: translate(-50%, -50%); 
-
-}
+  #top:hover{
+    color: white;
+    background-color :#b72de1;
+    border: 2px solid #b72de1;
+  }
