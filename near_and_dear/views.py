@@ -1,3 +1,6 @@
+import re
+
+from django.db.models import Q
 from django.http import HttpResponse
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter
@@ -27,7 +30,7 @@ class PostResultsSetPagination(LimitOffsetPagination):
 class PostListAPIGenerics(ListAPIView):
     queryset = Post.objects.all()
     serializer_class = PostListSerializer
-    pagination_class = PostResultsSetPagination
+    # pagination_class = PostResultsSetPagination
     filter_backends = [SearchFilter, DjangoFilterBackend]
     filterset_fields = ['id', 'category']
     search_fields = ('title', 'address')
@@ -41,7 +44,8 @@ class PostListAPIGenerics(ListAPIView):
             return titleScore, addressScore
 
         if search:
-            queryset = super().filter_queryset(queryset)
+            search = re.sub('[ㄱ-ㅎㅏ-ㅣ]+', '', search)
+            queryset = queryset.filter(Q(title__icontains=search) | Q(address__icontains=search))
             for number in queryset:
                 score = max(search_by_token_ratio(number))
                 if score < 95:
