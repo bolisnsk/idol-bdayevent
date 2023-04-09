@@ -4,12 +4,14 @@ from django.db.models import Q
 from django.http import HttpResponse
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter
-from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView, ListAPIView
+from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView, ListAPIView, RetrieveAPIView, \
+    CreateAPIView
 from rest_framework.pagination import PageNumberPagination, LimitOffsetPagination
 from fuzzywuzzy import fuzz
 
-from near_and_dear.models import Category, Post
-from near_and_dear.serializers import CategorySerializer, PostListSerializer, PostSerializer
+from near_and_dear.models import Category, Post, Review, ReviewComment
+from near_and_dear.serializers import CategorySerializer, PostListSerializer, PostSerializer, ReviewListSerializer, \
+    ReviewSerializer, ReviewCreateSerializer, ReviewCommentSerializer, ReviewCommentCreateSerializer
 
 
 class CategoryListAPIGenerics(ListCreateAPIView):
@@ -24,8 +26,10 @@ class CategoryAPIGenerics(RetrieveUpdateDestroyAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
 
+
 class PostResultsSetPagination(LimitOffsetPagination):
     default_limit = 4
+
 
 class PostListAPIGenerics(ListAPIView):
     queryset = Post.objects.all()
@@ -39,8 +43,8 @@ class PostListAPIGenerics(ListAPIView):
         search = self.request.query_params.get('search', None)
 
         def search_by_token_ratio(post):
-            titleScore = fuzz.token_set_ratio(search, post.title)*1.2
-            addressScore = fuzz.token_set_ratio(search, post.address)*10
+            titleScore = fuzz.token_set_ratio(search, post.title) * 1.2
+            addressScore = fuzz.token_set_ratio(search, post.address) * 10
             return titleScore, addressScore
 
         if search:
@@ -61,7 +65,28 @@ class PostListAPIGenerics(ListAPIView):
     #     # queryset = queryset.filter(Q(title__icontains=keyword) | Q(content__icontains=keyword))
     # return queryset
 
-
-class PostAPIGenerics(RetrieveUpdateDestroyAPIView):
+class PostAPIGenerics(RetrieveAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
+
+
+class ReviewListAPIGenerics(ListAPIView):
+    queryset = Review.objects.all()
+    serializer_class = ReviewListSerializer
+class ReviewAPIGenerics(RetrieveAPIView):
+    queryset = Review.objects.all()
+    serializer_class = ReviewSerializer
+class ReviewCreateAPIGenerics(CreateAPIView):
+    queryset = Review.objects.all()
+    serializer_class = ReviewCreateSerializer
+
+
+class ReviewCommentListAPIGenerics(ListAPIView):
+    queryset = ReviewComment.objects.all()
+    serializer_class = ReviewCommentSerializer
+class ReviewCommentAPIGenerics(RetrieveAPIView):
+    queryset = ReviewComment.objects.all()
+    serializer_class = ReviewCommentSerializer
+class ReviewCommentCreateAPIGenerics(CreateAPIView):
+    queryset = ReviewComment.objects.all()
+    serializer_class = ReviewCommentCreateSerializer
