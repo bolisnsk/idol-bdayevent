@@ -17,7 +17,7 @@ function List({category}) {
   const params = useParams(search);
   const [searchData, setSearchData] = useState([]);
   const [ref, inView] = useInView();
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(0);
   const [count, setCount] = useState(0);
   // 로딩 상태를 담아놓는 곳
 
