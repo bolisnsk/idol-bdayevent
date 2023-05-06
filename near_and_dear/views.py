@@ -34,18 +34,26 @@ class PostResultsSetPagination(LimitOffsetPagination):
 class PostListAPIGenerics(ListAPIView):
     queryset = Post.objects.all()
     serializer_class = PostListSerializer
-    # pagination_class = PostResultsSetPagination
+    pagination_class = PostResultsSetPagination
     filter_backends = [SearchFilter, DjangoFilterBackend]
     filterset_fields = ['id', 'category']
     search_fields = ('title', 'address')
 
     def filter_queryset(self, queryset):
         search = self.request.query_params.get('search', None)
+        category = self.request.query_params.get('category', None)
+        pk = self.request.query_params.get('pk', None)
 
         def search_by_token_ratio(post):
             titleScore = fuzz.token_set_ratio(search, post.title) * 1.2
             addressScore = fuzz.token_set_ratio(search, post.address) * 10
             return titleScore, addressScore
+
+        if category:
+            queryset = queryset.filter(category=category)
+
+        if pk:
+            queryset = queryset.filter(pk=pk)
 
         if search:
             search = re.sub('[ㄱ-ㅎㅏ-ㅣ]+', '', search)
@@ -55,7 +63,11 @@ class PostListAPIGenerics(ListAPIView):
                 if score < 95:
                     print(f"검색어: {search} | 게시물: {number.title} | 주소: {number.address} | 점수: {score}")
             queryset = [post for post in queryset if max(search_by_token_ratio(post)) >= 95]
+
         return queryset
+
+
+
 
     # def get_queryset(self):
     #     queryset = Post.objects.all()
