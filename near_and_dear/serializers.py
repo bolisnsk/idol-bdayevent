@@ -34,7 +34,7 @@ class PostSerializer(serializers.ModelSerializer):
 class ReviewListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Review
-        fields = ("pk", "title")
+        fields = ("pk", "title", "content", "image")
 class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
         model = Review
