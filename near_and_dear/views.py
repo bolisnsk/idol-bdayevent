@@ -27,14 +27,14 @@ class CategoryAPIGenerics(RetrieveUpdateDestroyAPIView):
     serializer_class = CategorySerializer
 
 
-class PostResultsSetPagination(LimitOffsetPagination):
+class LimitedResultsSetPagination(LimitOffsetPagination):
     default_limit = 4
 
 
 class PostListAPIGenerics(ListAPIView):
     queryset = Post.objects.all()
     serializer_class = PostListSerializer
-    pagination_class = PostResultsSetPagination
+    pagination_class = LimitedResultsSetPagination
     filter_backends = [SearchFilter, DjangoFilterBackend]
     filterset_fields = ['id', 'category']
     search_fields = ('title', 'address')
@@ -66,14 +66,11 @@ class PostListAPIGenerics(ListAPIView):
 
         return queryset
 
-
-
-
     # def get_queryset(self):
     #     queryset = Post.objects.all()
     #     keyword = self.request.query_params.get('search')
     # if keyword:
-    #     queryset = queryset.filter(search_name=keyword)
+    #     queryset = queryset.filter(search_    name=keyword)
     #     # queryset = queryset.filter(Q(title__icontains=keyword) | Q(content__icontains=keyword))
     # return queryset
 
@@ -81,16 +78,20 @@ class PostAPIGenerics(RetrieveAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
 
-
 class ReviewListAPIGenerics(ListAPIView):
     queryset = Review.objects.all()
     serializer_class = ReviewListSerializer
+    pagination_class = LimitedResultsSetPagination
+    filter_backends = [SearchFilter, DjangoFilterBackend]
+    search_fields = ('title', 'content')
+
 class ReviewAPIGenerics(RetrieveAPIView):
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
 class ReviewCreateAPIGenerics(CreateAPIView):
     queryset = Review.objects.all()
     serializer_class = ReviewCreateSerializer
+
 
 
 class ReviewCommentListAPIGenerics(ListAPIView):
