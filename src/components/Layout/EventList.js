@@ -6,11 +6,14 @@ import Card from "./Card";
 import './Search.css'
 import Mouse from "./mouse"
 import mainlogo from './Header/logo.png'
+import Comment from "./Comment";
 
 function EventList ( ) {
   const location = useLocation();
   const { title, address, close_time, open_time, start_day, end_day, search, url } = location.state;
   const navigate = useNavigate()
+  const [comment, setComment] = useState([]);
+
   return (
     <div>
        <div className="box">
@@ -29,9 +32,9 @@ function EventList ( ) {
                                 </Card>
                                 <iframe src="https://pbs.twimg.com/media/Frki-ePagAU75aR?format=jpg&name=large" height="500" width="100%"></iframe>
                     </div>
-                   
+                    
                 </main>
-               
+                <Comment/>
             </div>
             
         </div>
