@@ -34,6 +34,7 @@ function EventList ( ) {
                     </div>
                     
                 </main>
+                <button onClick={() => window.open('https://twitter.com/lastone_720/status/1631591680322449410?s=20', '_blank')}>원본 트윗 가기</button>
                 <Comment/>
             </div>
             

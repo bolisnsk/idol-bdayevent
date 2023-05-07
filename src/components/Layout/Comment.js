@@ -39,20 +39,25 @@ function Comment() {
     return (
       <div>
         <br />
-        <p>Review</p>
+        <p style={{marginLeft:'20px'}}>Review</p>
         <hr />
 
-        <div style={{ marginLeft: '30px'}}>{posts.map((reviews) => (
-            <div key={reviews.pk}>{reviews.title}</div>
-        )) }</div>
+          {posts && posts.map((reviews) => (
+             <div style={{ marginLeft: '30px', marginRight: '30px', fontSize: '18px' }} key={reviews.pk}>
+                
+             <li style={{fontSize: '20px'}}>{reviews.title}</li>
+      
+                {reviews.content}</div>
+         
+        )) }
   
         <div style={{display : 'flex', marginLeft: '30px', paddingBottom: '30px', marginTop : '20px'}}>
-            <input
+            <input  style={{ width: '750px' }}
                 >
             </input>
       
           <br />
-          <button style={{ width: '20%', height: '52px', marginLeft: '30PX' }} >
+          <button style={{ width: '20%', height: '52px', marginRight: '30PX', fontSize: '16px' }} >
             입력
           </button>
           </div>
