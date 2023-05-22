@@ -9,10 +9,8 @@ from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIV
 from rest_framework.pagination import PageNumberPagination, LimitOffsetPagination
 from fuzzywuzzy import fuzz
 
-from near_and_dear.models import Category, Post, Review, ReviewComment
-from near_and_dear.serializers import CategorySerializer, PostListSerializer, PostSerializer, ReviewListSerializer, \
-    ReviewSerializer, ReviewCreateSerializer, ReviewCommentSerializer, ReviewCommentCreateSerializer
-
+from near_and_dear.models import Category, Post
+from near_and_dear.serializers import CategorySerializer, PostListSerializer, PostSerializer
 
 class CategoryListAPIGenerics(ListCreateAPIView):
     queryset = Category.objects.all()
@@ -74,32 +72,7 @@ class PostListAPIGenerics(ListAPIView):
     #     # queryset = queryset.filter(Q(title__icontains=keyword) | Q(content__icontains=keyword))
     # return queryset
 
+
 class PostAPIGenerics(RetrieveAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
-
-class ReviewListAPIGenerics(ListAPIView):
-    queryset = Review.objects.all()
-    serializer_class = ReviewListSerializer
-    pagination_class = LimitedResultsSetPagination
-    filter_backends = [SearchFilter, DjangoFilterBackend]
-    search_fields = ('title', 'content')
-
-class ReviewAPIGenerics(RetrieveAPIView):
-    queryset = Review.objects.all()
-    serializer_class = ReviewSerializer
-class ReviewCreateAPIGenerics(CreateAPIView):
-    queryset = Review.objects.all()
-    serializer_class = ReviewCreateSerializer
-
-
-
-class ReviewCommentListAPIGenerics(ListAPIView):
-    queryset = ReviewComment.objects.all()
-    serializer_class = ReviewCommentSerializer
-class ReviewCommentAPIGenerics(RetrieveAPIView):
-    queryset = ReviewComment.objects.all()
-    serializer_class = ReviewCommentSerializer
-class ReviewCommentCreateAPIGenerics(CreateAPIView):
-    queryset = ReviewComment.objects.all()
-    serializer_class = ReviewCommentCreateSerializer
