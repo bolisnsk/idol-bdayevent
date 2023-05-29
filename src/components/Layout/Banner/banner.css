@@ -7,8 +7,8 @@ body{
     border: 1.5px solid black;
     border-radius: 30px;
     display: flex;
-    width: 480px;
-    height: 44px;   
+    width: 740px;
+    height: 56px;   
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -51,13 +51,13 @@ body{
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin-right: 20px;
+    margin-left: 250px;
 }
 
 
 @media screen and (max-width:780px){
     .search{
-        width: 450px;
+        width: 350px;
         height: 50px;  
     }
 
