@@ -1,6 +1,6 @@
 # 아이돌 이벤트 정보 제공 사이트
     
-     Last Updated : 2023-05-22     
+     Last Updated : 2023-04-09     
 
      요구사항
      PyCharm(선택, 필수는 아니지만 권장)
@@ -21,6 +21,14 @@
 
      http://127.0.0.1:8000/near_and_dear/post/
      http://127.0.0.1:8000/near_and_dear/post/(포스터 번호:pk)
+
+     http://127.0.0.1:8000/near_and_dear/review/
+     http://127.0.0.1:8000/near_and_dear/review/create
+     http://127.0.0.1:8000/near_and_dear/review/(리뷰 번호:pk)
+
+     http://127.0.0.1:8000/near_and_dear/review/comment
+     http://127.0.0.1:8000/near_and_dear/review/comment/create
+     http://127.0.0.1:8000/near_and_dear/review/comment(리뷰 코멘트 번호:pk)
     
      ?search=(제목, 주소) # 검색
      ?category=(Category_id), ?pk=(pk) # 필터
