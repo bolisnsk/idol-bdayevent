@@ -17,7 +17,7 @@ class Post(models.Model):
     address = models.CharField(max_length=128)
     content = models.TextField(blank=True)
     url = models.URLField(blank=True)
-    image = models.ImageField(upload_to='post/%Y/%m/', blank=True, null=True)
+    image = models.URLField(blank=True, null=True)
     create_dt = models.DateTimeField(auto_now_add=True)
     update_dt = models.DateTimeField(auto_now=True)
     start_day = models.DateField()
