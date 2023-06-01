@@ -14,7 +14,7 @@ class PostListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Post
-        fields = ("pk", "category", "url", "title", "start_day", "end_day", "address", "open_time", "close_time")
+        fields = ("pk", "category", "url", "title", "image", "start_day", "end_day", "address", "open_time", "close_time")
 
 
 class PostCreateSerializer(serializers.ModelSerializer):
