@@ -62,7 +62,6 @@ function List(category) {
         <Card key={post.pk} {...post} />  // 잔여연산자 사용
       ))}
      <div className = "load" ref={ref}>안녕</div>
-
     </div>
     
   );
