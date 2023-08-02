@@ -22,7 +22,7 @@ function App() {
         <Route path="Search/:search/exhibition" element={<Exh />} />
         <Route path="Search/:search/event" element={<Cevent />} />
         <Route path="Search/:search/detail/:title" element={<EventList />} />
-      </Routes>\
+      </Routes>
     </div>
   );
 

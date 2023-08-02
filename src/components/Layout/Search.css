@@ -34,9 +34,33 @@ body::-webkit-scrollbar-track {
     background-repeat : no-repeat;
 }
 
-.logo {
+.btnO{
+    width: 200px;
+    height: 48px;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: #b72de1;
+}
+
+.btnO:hover{
+    width: 200px;
+    height: 48px;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: black;
+    background-color: white;
+}
+
+.btnlogo{
+    background-image: url(./Header/logo.png);
+    background-size: cover;
+    background-color:transparent;
+    border: none;
     width: 100px;
-    height: 80px;
+    height: 88px;
     margin: 30px;
 }
 
@@ -58,31 +82,14 @@ body::-webkit-scrollbar-track {
     display: flex;
     align-content: center;
     justify-content: center;
-}
-
-.cbutton{
-    margin-left: 20px;
-    margin-bottom: 40px;
-    width: 200px;
-    height: 56px;
-    background: #ffffff;
-    border: 2.5px solid black;
-    font-size: 24px;
-    font-style: bold;
+    margin: 0 20px;
 }
 
 .infoImg{
     width: 500px;
-    height: 620px;
-}
-
-.cn {
-    display: block;
-    font-style: bold;
-    font-size: 24px;
-    align-content: center;
-    justify-content: center;
-    
+    height: 100%;
+    margin-bottom: 60px;
+    margin-right: 10px;
 }
 
 .ctitle{
@@ -114,7 +121,7 @@ td {
 }
 
 .border{
-    border-bottom: solid black 1px;
+    border-bottom: solid black 1.5px;
     
 }
 

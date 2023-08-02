@@ -7,7 +7,6 @@ import { useNavigate } from 'react-router-dom';
 import Card from './Card';
 import { useInView } from "react-intersection-observer";
 import './List.css'
-import Loading from "./Loading";
 
 function List() {
   const location = useLocation();

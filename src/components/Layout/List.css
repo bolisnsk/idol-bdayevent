@@ -7,3 +7,26 @@
     color: white;
 
 }
+
+.cbutton{
+    margin-left: 20px;
+    margin-bottom: 40px;
+    width: 200px;
+    height: 56px;
+    background: #ffffff;
+    border: 2.5px solid black;
+    font-size: 24px;
+    font-style: bold;
+}
+
+.cbutton:hover{
+    margin-left: 20px;
+    margin-bottom: 40px;
+    width: 200px;
+    height: 56px;
+    background: #cf84f5;
+    color: #ffffff;
+    border: 2.5px solid black;
+    font-size: 24px;
+    font-style: bold;
+}

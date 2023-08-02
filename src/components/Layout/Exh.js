@@ -9,6 +9,7 @@ import { useInView } from "react-intersection-observer";
 import './List.css'
 import Mouse from "./mouse"
 import mainlogo from './Header/logo.png'
+import Logo from "./Logo";
 
 function Exh() {
   const location = useLocation();
@@ -44,7 +45,7 @@ function Exh() {
      <div className="box">
       <Mouse/>
       <header className='title'>
-        <img className='logo' src={mainlogo} alt='logo' />
+        <Logo/>
        </header>
        <h2 className="header"> { search } 's EVENT</h2>
         <div className="content">

@@ -5,6 +5,7 @@ import Banner from '../Banner/Banner';
 import mainlogo from './logo.png'
 import React from "react";
 import Mouse from '../mouse';
+import Logo from '../Logo';
 
 const Header = () => {
     const introEx = {
@@ -16,7 +17,7 @@ const Header = () => {
         <div className='con'>
           <Mouse/>
           <header className='title'>
-            <img className='logo' src={mainlogo} alt='logo' />
+            <Logo/>
           </header>
             <div className='introEx line'>
               {introEx[0]}  

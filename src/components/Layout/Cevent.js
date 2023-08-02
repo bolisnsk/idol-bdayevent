@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useState, useCallback, useRef } from 'react';
+import { useEffect, useState} from 'react';
 import axios from "axios"
 import { useLocation } from "react-router";
 import { useNavigate } from 'react-router-dom';
@@ -7,7 +7,7 @@ import Card from './Card';
 import { useInView } from "react-intersection-observer";
 import './List.css'
 import Mouse from "./mouse"
-import mainlogo from './Header/logo.png'
+import Logo from './Logo'
 
 function Cevent() {
   const location = useLocation();
@@ -43,7 +43,7 @@ function Cevent() {
       <div className="box">
         <Mouse/>
         <header className='title'>
-          <img className='logo' src={mainlogo} alt='logo' />
+          <Logo/>
         </header>
           <h2 className="header"> { search } 's EVENT</h2>
           <div className="content">
