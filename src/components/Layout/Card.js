@@ -1,42 +1,10 @@
 import React from "react";
-import styled from "styled-components";
-import { useLocation, useParams } from "react-router";
-import { Link, Router, useNavigate } from 'react-router-dom';
-import Search from "./Search";
+import { useLocation} from "react-router";
+import { useNavigate } from 'react-router-dom';
 import "./Card.css"
 
-const NewsItemBlock = styled.div`
-  display: flex;
 
-  .thumbnail {
-    margin-right: 1rem;
-    img {
-      display: block;
-      width: 160px;
-      height: 180px;
-      object-fit: cover;
-    }
-  }
-  .contents {
-    h2 {
-      margin: 0;
-      a {
-        color: black;
-      }
-    }
-    p {
-      margin: 0;
-      line-height: 1.5;
-      margin-top: 0.5rem;
-      white-space: normal;
-    }
-  }
-  & + & {
-    margin-top: 3rem;
-  }
-`;
-
-function Card ({ title, address, open_time, close_time, start_day, end_day, url } ) {
+function Card ({ title, address, open_time, close_time, start_day, end_day, url, image } ) {
   const navigate = useNavigate();
   const location = useLocation();
   const { search } = location.state;
@@ -45,7 +13,7 @@ function Card ({ title, address, open_time, close_time, start_day, end_day, url 
     <div onClick={() =>
       navigate(`/Search/${search}/detail/${title}`,
         {state: { title : title, address : address, open_time : open_time,
-           search : search, close_time : close_time, start_day : start_day, end_day : end_day, url : url }}
+           search : search, close_time : close_time, start_day : start_day, end_day : end_day, url : url, image : image }}
       ) }>
         <h3>{title}</h3>
       <table >
@@ -64,7 +32,6 @@ function Card ({ title, address, open_time, close_time, start_day, end_day, url 
                     </tr>
                     <tr className="t"></tr>
                 </thead>
-                 
         </table>
         <div className="border"></div>
   </div>

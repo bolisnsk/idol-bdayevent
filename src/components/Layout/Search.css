@@ -13,26 +13,24 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     height: 30%; /* 스크롤바의 길이 */
     background: #b72de1; /* 스크롤바의 색상 */
-    border-radius: 10px;
 }
 
 body::-webkit-scrollbar-track {
     background: rgba(202, 33, 244, 0.1);  /*스크롤바 뒷 배경 색상*/
 }
+
 .header{
     margin: 0px;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
-    animation: fadeInDown 1s;
-    
+    animation: fadeInDown 1s; 
 }
 
 .box{
     background-image: url(./45.jpg);
-    font-family: 'Playfair Display', serif;
+    font-family: 'NeoDunggeunmoPro-Regular';
     background-size: cover;
-
     background-repeat : no-repeat;
 }
 
@@ -44,13 +42,12 @@ body::-webkit-scrollbar-track {
 
 .content{
     display: block;
-    margin-left: 320px;
-    margin-right: 320px;
+    margin-left: 300px;
+    margin-right: 300px;
     font-size: 24px;
     background: #ffffff;
-    border-radius: 30px;
     padding-top: 60px;
-
+    border: 2.5px solid black;
 }
 
 .fillter{
@@ -61,21 +58,23 @@ body::-webkit-scrollbar-track {
     display: flex;
     align-content: center;
     justify-content: center;
-    
 }
 
 .cbutton{
     margin-left: 20px;
     margin-bottom: 40px;
     width: 200px;
-    height: 50px;
+    height: 56px;
     background: #ffffff;
-    border-radius: 30px;
-    border: 1.5px solid black;
-    font-size: 20px;
+    border: 2.5px solid black;
+    font-size: 24px;
     font-style: bold;
 }
 
+.infoImg{
+    width: 500px;
+    height: 620px;
+}
 
 .cn {
     display: block;
@@ -88,8 +87,7 @@ body::-webkit-scrollbar-track {
 
 .ctitle{
     display: block;
-  
-    font-family: 'Gothic A1', sans-serif;
+    font-family: 'NeoDunggeunmoPro-Regular';
     font-weight: 300;
 }
 

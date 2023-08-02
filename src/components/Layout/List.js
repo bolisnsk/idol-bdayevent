@@ -1,9 +1,7 @@
 // eslint-disable-next-line
 import React from "react";
 import { useEffect, useState } from 'react';
-import styled from 'styled-components';
 import axios from "axios";
-import Pagination from "react-js-pagination";
 import { useLocation } from "react-router";
 import { useNavigate } from 'react-router-dom';
 import Card from './Card';
@@ -11,17 +9,13 @@ import { useInView } from "react-intersection-observer";
 import './List.css'
 import Loading from "./Loading";
 
-// 카테고리를 props로 받아옴
-function List(category) {
+function List() {
   const location = useLocation();
   const { search } = location.state;
   const [searchData, setSearchData] = useState([]);
   const [ref, inView] = useInView();
   const [page, setPage] = useState(0);
   const navigate = useNavigate();
-  // 로딩 상태를 담아놓는 곳
-  const [ loading , setLoading ] = useState(null);
-    // api 주소에 카테고리 값으로 끼워넣을 상수 생성
 
   /*const handlePageChange = (page) => {
     setPage(page);
@@ -45,7 +39,7 @@ function List(category) {
       console.log(inView, '무한 스크롤 요청')
       fetchData();
     }
-  }, [inView, category]);
+  }, [inView]);
 
 
   return (

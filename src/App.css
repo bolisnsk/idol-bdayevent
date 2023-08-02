@@ -9,40 +9,6 @@ body{
     position: relative;
 }
 
-.cursor{ 
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  transform: translate(-50%, -50%);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3px);
-  background: rgba(255, 255, 255, 0.05);
-  position: absolute;
-  border-radius: 50%;
-  aspect-ratio: 1;
-  z-index: 9;
-  width: 60px;
-
-  will-change: left;
-  will-change: top;
-}
-
-.pointer {
-  position: absolute;
-
-  top: 0; 
-
-  left: 0; 
-
-  width: 150px; 
-
-  height: 150px; 
-
-  border-radius: 50%; 
-
-  background-color: #9bf50b; 
-
-  transform: translate(-50%, -50%); 
-
-}
 
 .outer {
     height: 100vh;
@@ -71,6 +37,16 @@ body{
   }*/
   
   .mount1{ animation: 0.7s ease-in-out loadEffect1; }
+
+  @font-face {
+    font-family: "NeoDunggeunmoPro-Regular";
+    src: url("./Fonts/NeoDunggeunmoPro-Regular.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "땅스부대찌개";
+    src: url("./Fonts/땅스부대찌개 Medium.ttf") format("truetype");
+  }  
 
 @keyframes loadEffect1 {
     0%{
