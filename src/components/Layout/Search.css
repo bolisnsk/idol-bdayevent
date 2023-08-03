@@ -1,9 +1,7 @@
 body{
     width: 100%;
-    height: 100vh;
     margin: 0px;
     padding: 0px;
-    
 }
 
 body::-webkit-scrollbar {
@@ -12,7 +10,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
     height: 30%; /* 스크롤바의 길이 */
-    background: #b72de1; /* 스크롤바의 색상 */
+    background: rgb(234, 77, 163); /* 스크롤바의 색상 */
 }
 
 body::-webkit-scrollbar-track {
@@ -25,13 +23,19 @@ body::-webkit-scrollbar-track {
     display: flex;
     justify-content: center;
     animation: fadeInDown 1s; 
+    color: white;
+    text-shadow: -2px 0px rgb(0, 0, 0), 0px 2px rgb(215, 45, 130), 2px 0px rgb(215, 45, 130), 0px -2px rgb(215, 45, 130);
 }
 
 .box{
-    background-image: url(./45.jpg);
     font-family: 'NeoDunggeunmoPro-Regular';
-    background-size: cover;
+    background-color: rgb(255, 177, 220);
+    padding-bottom: 20px;
     background-repeat : no-repeat;
+}
+
+.btn{
+    margin-left: 48px;
 }
 
 .btnO{
@@ -41,7 +45,7 @@ body::-webkit-scrollbar-track {
     margin-left: 10px;
     margin-top: 10px;
     color: white;
-    background-color: #b72de1;
+    background-color: rgb(234, 77, 163);
 }
 
 .btnO:hover{
@@ -70,6 +74,7 @@ body::-webkit-scrollbar-track {
     margin-right: 300px;
     font-size: 24px;
     background: #ffffff;
+    height: auto;
     padding-top: 60px;
     border: 2.5px solid black;
 }
@@ -93,6 +98,12 @@ body::-webkit-scrollbar-track {
 }
 
 .ctitle{
+    display: block;
+    font-family: 'NeoDunggeunmoPro-Regular';
+    font-weight: 300;
+}
+
+.econtents{
     display: block;
     font-family: 'NeoDunggeunmoPro-Regular';
     font-weight: 300;
@@ -138,10 +149,32 @@ td {
         font-size: 20px;
     }
 
-    .cbutton{
-        width: 100px;
-        font-size: 14px;
+    .btnO{
+        width: 116px;
         height: 32px;
+        font-size: 16px;
+    }
+    
+    .btnO:hover{
+        width: 116px;
+        height: 32px;
+        font-size: 16px;
+    }
+    
+    .econtents{
+        position: absolute;
+        margin-top: 680px;
     }
 
+    .content{
+        height: 1000px;
+    }
+
+    .box{
+        height: 100vh;
+    }
+
+    .btn{
+        margin-left: 64px;
+    }
 }

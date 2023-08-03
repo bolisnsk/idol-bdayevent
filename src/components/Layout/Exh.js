@@ -1,6 +1,5 @@
 import React from "react";
 import { useEffect, useState } from 'react';
-import styled from 'styled-components';
 import axios from "axios"
 import { useLocation } from "react-router";
 import { useNavigate } from 'react-router-dom';
@@ -8,7 +7,6 @@ import Card from './Card';
 import { useInView } from "react-intersection-observer";
 import './List.css'
 import Mouse from "./mouse"
-import mainlogo from './Header/logo.png'
 import Logo from "./Logo";
 
 function Exh() {
@@ -51,7 +49,6 @@ function Exh() {
         <div className="content">
           <main className="list">
             <div className="ctitle">
-              <h2 className="cn"> </h2>
                 <button className="cbutton" onClick={() => navigate(`/Search/${search}`, {state:{search : search, }}
                   ) }>전체보기</button>
                 <button className="cbutton" onClick={() => navigate(`/Search/${search}/cafe`, {state:{search : search, }}

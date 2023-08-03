@@ -21,7 +21,7 @@ function EventList ( ) {
             <div className="content">
                 <main className="list">
                 <img className="infoImg" src={image}/>
-                    <div className="ctitle">
+                    <div className="econtents">
                         <h2 className="cn"> </h2>
                         <Card title={title} address={address} open_time={open_time}
                                 close_time={close_time} start_day={start_day} end_day={end_day} >

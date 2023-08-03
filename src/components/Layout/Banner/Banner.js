@@ -30,7 +30,7 @@ function Banner(){
             <input
               type="text"
               value={search}
-              placeholder="GroupName + member"
+              placeholder="GroupName + member, GroupName, member"
               className='input_box'
               onChange={onChange}
               onKeyPress={onKeyPress}

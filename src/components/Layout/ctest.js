@@ -1,7 +1,8 @@
+// eslint-disable-next-line
 import React from "react";
 import { useEffect, useState } from 'react';
 import axios from "axios"
-import { useLocation, useParams } from "react-router";
+import { useLocation } from "react-router";
 import { useNavigate } from 'react-router-dom';
 import Card from './Card';
 import { useInView } from "react-intersection-observer";
@@ -48,7 +49,6 @@ function Cafe() {
             <div className="content">
               <main className="list">
                 <div className="ctitle">
-                  <h2 className="cn"> </h2>
                     <button className="cbutton" onClick={() => navigate(`/Search/${search}`, {state:{search : search, }}
                       ) }>전체보기</button>
                      <button className="cbutton" onClick={() => navigate(`/Search/${search}/cafe`, {state:{search : search, }}
