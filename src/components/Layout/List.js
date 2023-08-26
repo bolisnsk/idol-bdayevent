@@ -16,10 +16,6 @@ function List() {
   const [page, setPage] = useState(0);
   const navigate = useNavigate();
 
-  /*const handlePageChange = (page) => {
-    setPage(page);
-  };*/
-
   const fetchData = () => {
     axios.get(
       ` http://127.0.0.1:8000/near_and_dear/post/?search=${search}&offset=${
@@ -35,7 +31,7 @@ function List() {
 
     useEffect(() => {
     if (inView){
-      console.log(inView, '무한 스크롤 요청')
+      console.log(inView, '무한 스크롤 요청') //inView 사용해서 ref 만나면 데이터를 불러옴
       fetchData();
     }
   }, [inView]);

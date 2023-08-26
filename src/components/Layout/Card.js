@@ -10,11 +10,12 @@ function Card ({ title, address, open_time, close_time, start_day, end_day, url,
   const { search } = location.state;
 
   return (
+    //원하는 이벤트 눌렀을 때 EventList로 넘어가면서 가져온 값 전달
     <div onClick={() =>
       navigate(`/Search/${search}/detail/${title}`,
         {state: { title : title, address : address, open_time : open_time,
            search : search, close_time : close_time, start_day : start_day, end_day : end_day, url : url, image : image }}
-      ) }>
+      ) }> 
         <h3>{title}</h3>
       <table >
                 <thead>
@@ -30,7 +31,6 @@ function Card ({ title, address, open_time, close_time, start_day, end_day, url,
                         <td>영업 시간 </td>
                         <td>{open_time} ~ {close_time}</td>
                     </tr>
-                    <tr className="t"></tr>
                 </thead>
         </table>
         <div className="border"></div>

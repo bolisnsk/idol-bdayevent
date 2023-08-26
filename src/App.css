@@ -9,35 +9,6 @@ body{
     position: relative;
 }
 
-
-.outer {
-    height: 100vh;
-    overflow-y: auto;
-  }
-  
-  /* 화면에서 스크롤바 안보이게 */
-  .outer::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .inner {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-  }
-
-  .container {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: auto;
-  }
-
-  /*.container::-webkit-scrollbar {
-    display: none;
-  }*/
-  
-  .mount1{ animation: 0.7s ease-in-out loadEffect1; }
-
   @font-face {
     font-family: "NeoDunggeunmoPro-Regular";
     src: url("./Fonts/NeoDunggeunmoPro-Regular.ttf") format("truetype");
@@ -49,18 +20,6 @@ body{
   }  
 
   @font-face {
-    font-family: 'PyeongChangPeace-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@keyframes loadEffect1 {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-  
+    font-family: "양진체";
+    src: url("../Fonts/양진체v0.9_ttf.ttf") format("truetype");
+  }  
