@@ -40,12 +40,12 @@ body{
 
   @font-face {
     font-family: "NeoDunggeunmoPro-Regular";
-    src: url("./Fonts/NeoDunggeunmoPro-Regular.ttf") format("truetype");
+    src: url("../Fonts/NeoDunggeunmoPro-Regular.ttf") format("truetype");
   }
 
   @font-face {
     font-family: "ddag";
-    src: url("./Fonts/ddag.ttf") format("truetype");
+    src: url("../Fonts/ddag.ttf") format("truetype");
   }  
 
   @font-face {
