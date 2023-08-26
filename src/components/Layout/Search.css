@@ -1,0 +1,180 @@
+body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: rgb(234, 77, 163); /* 스크롤바의 색상 */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(202, 33, 244, 0.1);  /*스크롤바 뒷 배경 색상*/
+}
+
+.header{
+    margin: 0px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    animation: fadeInDown 1s; 
+    color: white;
+    text-shadow: -2px 0px rgb(0, 0, 0), 0px 2px rgb(215, 45, 130), 2px 0px rgb(215, 45, 130), 0px -2px rgb(215, 45, 130);
+}
+
+.box{
+    font-family: 'NeoDunggeunmoPro-Regular';
+    background-color: rgb(255, 177, 220);
+    padding-bottom: 20px;
+    background-repeat : no-repeat;
+}
+
+.btn{
+    margin-left: 48px;
+}
+
+.btnO{
+    width: 200px;
+    height: 48px;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: rgb(234, 77, 163);
+}
+
+.btnO:hover{
+    width: 200px;
+    height: 48px;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: black;
+    background-color: white;
+}
+
+.btnlogo{
+    background-image: url(./Header/logo.png);
+    background-size: cover;
+    background-color:transparent;
+    border: none;
+    width: 100px;
+    height: 88px;
+    margin: 30px;
+}
+
+.content{
+    display: block;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 24px;
+    background: #ffffff;
+    height: auto;
+    padding-top: 60px;
+    border: 2.5px solid black;
+}
+
+.fillter{
+    margin-bottom: 40px;
+}
+
+.list{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.infoImg{
+    width: 500px;
+    height: 100%;
+    margin-bottom: 60px;
+    margin-right: 10px;
+}
+
+.ctitle{
+    display: block;
+    font-family: 'NeoDunggeunmoPro-Regular';
+    font-weight: 300;
+}
+
+.econtents{
+    display: block;
+    font-family: 'NeoDunggeunmoPro-Regular';
+    font-weight: 300;
+}
+
+table{
+    margin-top: 20px;
+    align-items: center;
+    width : 100%px;
+    height: 80%;
+    font-size: 22px;
+    
+}
+
+td {
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-right: 5px;
+
+  
+}
+
+.ca{
+    margin-left: 30px;
+}
+
+.border{
+    border-bottom: solid black 1.5px;
+    
+}
+
+@media screen and (max-width:780px){
+    .content{
+       margin: 0px;
+    }
+
+    table{
+        font-size: 16px;
+    }
+
+    .header{
+        font-size: 20px;
+    }
+
+    .btnO{
+        width: 116px;
+        height: 32px;
+        font-size: 16px;
+    }
+    
+    .btnO:hover{
+        width: 116px;
+        height: 32px;
+        font-size: 16px;
+    }
+    
+    .econtents{
+        position: absolute;
+        margin-top: 680px;
+    }
+
+    .content{
+        height: 1000px;
+    }
+
+    .box{
+        height: 100vh;
+    }
+
+    .btn{
+        margin-left: 64px;
+    }
+}

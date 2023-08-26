@@ -1,0 +1,17 @@
+h3{
+    padding-left: 140px;
+}
+
+cursor{
+    cursor: pointer;
+}
+
+@media screen and (max-width:780px){
+   h3{
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+   }
+
+}

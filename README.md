@@ -1,4 +1,4 @@
-# 아이돌 이벤트 정보 제공 사이트
+<<<<<<< HEAD
     
      Last Updated : 2023-04-09     
 
@@ -46,3 +46,5 @@
      데이터베이스 초기화
      ① db.sqlite3 삭제, migrations 폴더에 __init__.py를 제외한 모든 파일 삭제.
      ② python manage.py makemigrations, python manage.py migrate 실행.
+=======
+>>>>>>> 06a406ca7bbfe4e055490613a44139c3245ce4a8
