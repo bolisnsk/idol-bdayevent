@@ -18,6 +18,8 @@
       <option name="ignoredErrors">
         <list>
           <option value="E302" />
+          <option value="E501" />
+          <option value="E301" />
         </list>
       </option>
     </inspection_tool>
@@ -30,6 +32,15 @@
         </list>
       </option>
     </inspection_tool>
+    <inspection_tool class="PyPropertyDefinitionInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyShadowingBuiltinsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredNames">
+        <list>
+          <option value="id" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyTupleAssignmentBalanceInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoredIdentifiers">
         <list>
@@ -40,6 +51,15 @@
           <option value="users.models.Profile.objects" />
           <option value="posts.models.Post.objects" />
           <option value="posts.models.Comment.objects" />
+          <option value="posts.models.Category.objects" />
+          <option value="ssl._create_unverified_context" />
+          <option value="parsed_data.models.BlogData.objects" />
+          <option value="mySurvey.models.Survey.objects" />
+          <option value="posts.models.Category.filter_queryset" />
+          <option value="list.*" />
+          <option value="near_and_dear.models.Post.objects" />
+          <option value="near_and_dear.models.Category.objects" />
+          <option value="near_and_dear.models.Review.*" />
         </list>
       </option>
     </inspection_tool>
