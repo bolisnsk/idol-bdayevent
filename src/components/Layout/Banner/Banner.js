@@ -16,11 +16,11 @@ function Banner(){
 
     const onKeyPress = (e) => {
       if(e.key == 'Enter'){
-        gohome();
+        goList();
       }
     }
 
-    const gohome = () => {
+    const goList = () => {
       navigate(`/Search/${search}`, {state: { search : search}, });
     }
 
@@ -36,7 +36,7 @@ function Banner(){
               onKeyPress={onKeyPress}
             />
           <button type='button' className='sbutton' 
-            onClick={gohome}  >
+            onClick={goList}  >
               <GoSearch size={20}/>
               </button>
           </div>

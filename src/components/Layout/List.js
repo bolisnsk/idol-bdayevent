@@ -16,10 +16,6 @@ function List() {
   const [page, setPage] = useState(0);
   const navigate = useNavigate();
 
-  /*const handlePageChange = (page) => {
-    setPage(page);
-  };*/
-
   const fetchData = () => {
     axios.get(
       ` http://127.0.0.1:8000/near_and_dear/post/?search=${search}&offset=${
