@@ -25,7 +25,7 @@ function Cevent() {
     .then((res) => {
       console.log(res.data.results);
       setSearchData([...searchData, ...(res.data.results)]);
-      setPage((page) => page + 1);
+      setPage((page) => page + 1); //다음 페이지로 넘어가기
      
     })
   } 

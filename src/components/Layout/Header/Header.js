@@ -2,7 +2,6 @@
 
 import './Header.css'
 import Banner from '../Banner/Banner';
-import mainlogo from './logo.png'
 import React from "react";
 import Mouse from '../mouse';
 import Logo from '../Logo';
@@ -10,7 +9,7 @@ import Logo from '../Logo';
 const Header = () => {
     const introEx = {
         0: `Near And Dear`,
-        1: `'소중한'이라는 뜻으로 당신의 가까이에서 소중한 날 기념을 함께합니다`,
+        1: `'소중한'이라는 뜻으로 당신의 가까이에서 소중한 날을 함께합니다`,
     }
 
     return (
