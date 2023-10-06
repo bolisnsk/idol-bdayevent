@@ -1,5 +1,4 @@
 ## 아이돌 이벤트 정보 사이트 
-
 ![Introduce](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/050922dd-5984-42eb-882c-5a2840e50e1e)
 
 
