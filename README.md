@@ -14,4 +14,4 @@
 ### 실행 방법 
 1. npm install(Terminal) 
 2. cd backend(Terminal) → python manage.py runserver
-  (사용 라이브러리 설치 필요) django, djangorestframework, fuzzywuzzy, django-cors-headers, django-filters
+<br/>(사용 라이브러리 설치 필요) django, djangorestframework, fuzzywuzzy, django-cors-headers, django-filters
