@@ -1,5 +1,8 @@
-## 아이돌 이벤트 정보 사이트 
-![Introduce](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/050922dd-5984-42eb-882c-5a2840e50e1e)
+### 아이돌 이벤트 정보 사이트
+
+# 프로젝트 소개
+![Introduce - 복사본](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/a5b4b17f-343a-46d8-b93b-cec3d54b7efd)
+
 ![Stack](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/43db7a5d-5460-4c14-970a-baf88e5500eb)
 
 
