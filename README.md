@@ -12,9 +12,9 @@
 ![Post_01](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/d6d60dc6-d305-43d5-ae97-68d84ff52e5c) | ![Post_02](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/5a809d20-1098-4c72-810b-0df81de32455)
 
 # 실행 방법 
-##### 1. 터미널(Terminal) 접속.
-##### 2. NPM 설치(npm install).
-##### 4. 백엔드 디렉토리로 이동(cd backend).
-##### 5. django, djangorestframework, django-cors-header, fuzzywazzy, django-filters를 설치(pip install ~).
-##### 6. NPM 실행(npm start)
-##### 7. 서버 실행(python manage.py runserver)
+1. 터미널(Terminal) 접속.
+2. NPM 설치(npm install).
+4. 백엔드 디렉토리로 이동(cd backend).
+5. django, djangorestframework, django-cors-header, fuzzywazzy, django-filters를 설치(pip install ~).
+6. NPM 실행(npm start)
+7. 서버 실행(python manage.py runserver)
