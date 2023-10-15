@@ -1,5 +1,5 @@
 # Near And Dear
-
+<img src="https://capsule-render.vercel.app/api?type=모양&color=색상코드&height=높이&section=header&text=텍스트&fontSize=텍스트크기" />
 ## 📝 프로젝트 개요
 ![Introduce_02](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/6991cd1a-3b65-4e9b-b381-4e79c8923416)
 프로젝트: 웹 크롤링을 이용한 아이돌 이벤트 제공 사이트 <br/>
