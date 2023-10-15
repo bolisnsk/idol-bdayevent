@@ -1,7 +1,7 @@
-# 아이돌 이벤트 정보 사이트
+# Near And Dear
 
 ### 프로젝트 소개
-![Introduce_02](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/fec5a199-99c1-4adf-bf88-40edb4edab49)
+![Introduce_02](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/6991cd1a-3b65-4e9b-b381-4e79c8923416)
 
 ### 기술 소개
 ![Stack_02](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/a787aff9-bbcb-48cb-8760-e7fcefcf43c5)
