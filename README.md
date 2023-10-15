@@ -2,15 +2,15 @@
 
 ## 📝 프로젝트 개요
 ![Introduce_02](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/6991cd1a-3b65-4e9b-b381-4e79c8923416)
-> 프로젝트: 웹 크롤링을 이용한 아이돌 이벤트 제공 사이트 <br/><br/>
-프로젝트 소개 : 아이돌 생일 이벤트는 팬덤 사이에서 큰 기념일 중 하나임.
+> ** 프로젝트 :** 웹 크롤링을 이용한 아이돌 이벤트 제공 사이트 <br/><br/>
+** 프로젝트 소개 **: 아이돌 생일 이벤트는 팬덤 사이에서 큰 기념일 중 하나임.
 주 정보원인 SNS 트위터에서 정보를 수집하기에 불편함이 있고, 아이돌 정보 제공 사이트나 어플에서도 이벤트 정보가 빈약함.
 이를 개선하고자 이벤트 정보를 한 곳에 모아서 제공하는 사이트를 제작하기로 함. <br/><br/>
-분류: 팀 프로젝트  <br/><br/>
-팀 구성 : 프론트엔드, 디자이너 - 1명, 백엔드(서버) - 1명, 백엔드(웹 크롤링) - 1명 <br/><br/>
-제작 기간: 아이디어 구상 - 2022. 09 ~ 12.<br/>
+** 분류: ** 팀 프로젝트  <br/><br/>
+** 팀 구성: ** 프론트엔드, 디자이너 - 1명, 백엔드(서버) - 1명, 백엔드(웹 크롤링) - 1명 <br/><br/>
+** 제작 기간: ** 아이디어 구상 - 2022. 09 ~ 12.<br/>
           구현 - 2023.01 ~ 06.<br/><br/>
-주요 기능: 모바일 반응형 웹, Fuzzywuzzy(유사도 검색)로 높은 검색 정확도, 트위터 게시물 추출, 이벤트명, 장소, 시간 제공<br/>
+** 주요 기능: ** 모바일 반응형 웹, Fuzzywuzzy(유사도 검색)로 높은 검색 정확도, 트위터 게시물 추출, 이벤트명, 장소, 시간 제공<br/>
 
 ## 🛠 기술 및 도구
 ![badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![badge](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![badge](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white) ![badge](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white) ![badge](https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black) ![badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) ![badge](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white)
