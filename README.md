@@ -3,10 +3,10 @@
 ### 📝 프로젝트 개요
 ![Introduce_02](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/6991cd1a-3b65-4e9b-b381-4e79c8923416)
 프로젝트: 개인 포트폴리오 사이트 <br/>
-분류: 팀 프로젝트
-제작 기간: 아이디어 구상 - 2022. 09 ~ 12.
-          구현 - 2023.01 ~ 06.
-주요 기능: 모바일 반응형 웹, Fuzzywuzzy(유사도 검색), 트위터 게시물 추출
+분류: 팀 프로젝트 <br/>
+제작 기간: 아이디어 구상 - 2022. 09 ~ 12.<br/>
+          구현 - 2023.01 ~ 06.<br/>
+주요 기능: 모바일 반응형 웹, Fuzzywuzzy(유사도 검색), 트위터 게시물 추출<br/>
 
 ### 🛠 기술 및 도구
 ![Stack_02](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/a787aff9-bbcb-48cb-8760-e7fcefcf43c5)
