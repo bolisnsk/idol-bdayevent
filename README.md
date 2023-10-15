@@ -14,7 +14,7 @@
 
 ## 🛠 기술 및 도구
 ![badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![badge](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![badge](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white) ![badge](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white) ![badge](https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black) ![badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) ![badge](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white)
-
+<br/>
 ## 👨🏻‍💻 실행 화면
 ### 1. 메인화면
 ![Main](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/6991cd1a-3b65-4e9b-b381-4e79c8923416)
@@ -31,7 +31,7 @@
 ### 3. 이벤트 상세 페이지 화면
 ![Post_01](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/d6d60dc6-d305-43d5-ae97-68d84ff52e5c) ![Post_02](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/5a809d20-1098-4c72-810b-0df81de32455)
 <li> 버튼을 통해 원본 트윗 새창으로 띄워서 제공 </li>
-<li> 버튼을 통해 목록으로 되돌아가기 가능 </li>
+<li> 버튼을 통해 목록으로 되돌아가기 가능 </li><br/>
 
 ## 🚀 실행 방법 
 1. 터미널(Terminal) 접속.
