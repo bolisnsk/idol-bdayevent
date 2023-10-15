@@ -11,7 +11,7 @@
 주요 기능: 모바일 반응형 웹, Fuzzywuzzy(유사도 검색)로 높은 검색 정확도, 트위터 게시물 추출, 이벤트명, 장소, 시간 제공<br/>
 
 ## 🛠 기술 및 도구
-![badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white), (https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB), (https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white), (https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white),(https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black), (https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white), (<img src="https://img.shields.io/badge/000000?style=flat-square&logo=notion&logoColor=000000"/>)
+![badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) (https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) (https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white) (https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)(https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black) (https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) (https://img.shields.io/badge/000000?style=flat-square&logo=notion&logoColor=000000)
 
 ## 👨🏻‍💻 실행 화면
 ### 1. 메인화면
