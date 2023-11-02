@@ -25,15 +25,22 @@
 <img width="200" height="400" src="https://github.com/bolisnsk/idol-bdayevent/assets/50792699/623a1215-dce3-4ba1-9c2c-e347744f9f3f"/>
 
 ### 2. 이벤트 리스트 화면
-![List](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/b110cb09-0224-4ec4-a9f1-e390fde3ebaf)
+![List](https://github.com/bolisnsk/idol-bdayevent/assets/50792699/7b953e64-cf57-44fb-9093-a56034876bd1)
 <li> 각 버튼으로 카페, 전시회, 이벤트 결과만 볼 수 있음 </li>
 <li> 데이터를 4개씩 불러오는 무한 스크롤로 구현 </li>
 <li> Top 버튼으로 상단으로 이동, 로고 클릭으로 메인화면으로 돌아갈 수 있음 </li> <br/>
+(23.11.02. 리스트 화면 디자인 수정, 네비게이션바 추가)
+<img width="1277" alt="list" src="https://github.com/bolisnsk/idol-bdayevent/assets/50792699/7b953e64-cf57-44fb-9093-a56034876bd1">
+<img width="225" alt="listm" src="https://github.com/bolisnsk/idol-bdayevent/assets/50792699/c1716292-eef0-448a-8935-7371f4351856">
+<img width="223" alt="listn" src="https://github.com/bolisnsk/idol-bdayevent/assets/50792699/6c0c1cb4-5741-48da-a601-fb26a97a9a84"> <br/>
 
 ### 3. 이벤트 상세 페이지 화면
 ![Post_01](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/d6d60dc6-d305-43d5-ae97-68d84ff52e5c) ![Post_02](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/5a809d20-1098-4c72-810b-0df81de32455)
 <li> 버튼을 통해 원본 트윗 새창으로 띄워서 제공 </li>
 <li> 버튼을 통해 목록으로 되돌아가기 가능 </li><br/>
+(23.11.02 디자인 수정)
+<img width="1278" alt="elist" src="https://github.com/bolisnsk/idol-bdayevent/assets/50792699/7ec41fb3-bf09-4ab5-b952-725de4adab62">
+<img width="278" alt="elistm" src="https://github.com/bolisnsk/idol-bdayevent/assets/50792699/0192abd0-8301-4f26-ba05-5d389cca0ca6"> <br/>
 
 ## 🚀 실행 방법 
 1. 터미널(Terminal) 접속.
