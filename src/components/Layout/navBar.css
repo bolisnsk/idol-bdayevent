@@ -1,0 +1,78 @@
+.nav{
+    background-color: rgb(255, 237, 241);
+    display: flex;
+}
+
+.nav_menus{
+    display: flex;
+    list-style: none;
+    margin-left: 400px;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.cbutton{
+    padding-top: 20px;
+    text-align: center;
+    height: 56px;
+    font-size: 16px;
+}
+
+@media (hover: hover) {
+    .cbutton:hover {
+        color: #f187b3;
+    }
+}
+
+.nav_toggle{
+    display: none;
+    padding: 20px;
+}
+
+.nav_toggle2{
+    position: relative;
+    top: 20px;
+    left: 200px;
+}
+
+.show-menu{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    transition: 1s;
+    background-color: rgb(241, 60, 145);
+    color: white;
+}
+    
+.hide-menu{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    left: -300px;
+    transition: 1s;
+}
+
+li{
+    list-style: none;
+}
+
+.tbutton{
+    width: 200px;
+    height: 50px;
+    padding: 20px 0px;
+    border-bottom: solid white 1px;
+}
+
+@media screen and (max-width:780px){
+    .nav_menus {
+        display: none;
+    }
+
+    .nav_toggle {
+        display: flex;
+    }
+    .cbutton{
+        font-size: 16px;
+    }
+}
