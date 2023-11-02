@@ -1,25 +1,24 @@
-body{
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-}
-
 body::-webkit-scrollbar {
     width: 8px;  /* 스크롤바의 너비 */
 }
 
 body::-webkit-scrollbar-thumb {
     height: 30%; /* 스크롤바의 길이 */
-    background: rgb(234, 77, 163); /* 스크롤바의 색상 */
+    background: rgb(234, 202, 209); /* 스크롤바의 색상 */
 }
 
 body::-webkit-scrollbar-track {
     background: rgba(202, 33, 244, 0.1);  /*스크롤바 뒷 배경 색상*/
 }
 
+header{
+    background-color: rgb(255, 237, 241);
+}
+
 .header{
-    margin: 0px;
-    margin-bottom: 30px;
+    padding-top: 20px;
+    height: 100px;
+    font-size: 28px;
     display: flex;
     justify-content: center;
     animation: fadeInDown 1s; 
@@ -29,9 +28,10 @@ body::-webkit-scrollbar-track {
 
 .box{
     font-family: 'NeoDunggeunmoPro-Regular';
-    background-color: rgb(255, 177, 220);
     padding-bottom: 20px;
     background-repeat : no-repeat;
+    display: block;
+    justify-content: center;
 }
 
 .btn{
@@ -48,14 +48,16 @@ body::-webkit-scrollbar-track {
     background-color: rgb(234, 77, 163);
 }
 
-.btnO:hover{
-    width: 200px;
-    height: 48px;
-    font-size: 24px;
-    margin-left: 10px;
-    margin-top: 10px;
-    color: black;
-    background-color: white;
+@media (hover: hover) {
+    .btnO:hover{
+        width: 200px;
+        height: 48px;
+        font-size: 24px;
+        margin-left: 10px;
+        margin-top: 10px;
+        color: black;
+        background-color: white;
+    }
 }
 
 .btnlogo{
@@ -63,20 +65,18 @@ body::-webkit-scrollbar-track {
     background-size: cover;
     background-color:transparent;
     border: none;
-    width: 100px;
-    height: 88px;
-    margin: 30px;
+    width: 56px;
+    height: 52px;
+    margin-top: 8px;
+    position: absolute;
+    left: 100px;
+    z-index: 1;
 }
 
 .content{
     display: block;
-    margin-left: 300px;
-    margin-right: 300px;
     font-size: 24px;
-    background: #ffffff;
     height: auto;
-    padding-top: 60px;
-    border: 2.5px solid black;
 }
 
 .fillter{
@@ -93,7 +93,6 @@ body::-webkit-scrollbar-track {
 .infoImg{
     width: 500px;
     height: 100%;
-    margin-bottom: 60px;
     margin-right: 10px;
 }
 
@@ -114,8 +113,7 @@ table{
     align-items: center;
     width : 100%px;
     height: 80%;
-    font-size: 22px;
-    
+    font-size: 20px;
 }
 
 td {
@@ -123,8 +121,6 @@ td {
     padding-bottom: 10px;
     padding-top: 5px;
     padding-right: 5px;
-
-  
 }
 
 .ca{
@@ -136,7 +132,53 @@ td {
     
 }
 
-@media screen and (max-width:780px){
+@media screen and (max-width:768px){
+    .content{
+        margin: 0px;
+    }
+
+    table{
+        font-size: 16px;
+    }
+
+    td{
+        padding-left: 30px;
+    }
+
+    .header{
+        font-size: 20px;
+    }
+
+    .btnO{
+        width: 116px;
+        height: 32px;
+        font-size: 16px;
+    }
+
+    .econtents{
+        position: absolute;
+        top: 640px;
+    }
+
+
+    .box{
+        width: auto;
+        height: 100vh;
+    }
+
+    .btnlogo{
+        width: 44px;
+        height: 42px;
+        justify-content: center;
+        left: 160px;
+    }
+
+    .infoImg{
+        width: 380px;
+    }
+}
+
+@media (min-width:768px ) and (max-width:992px){
     .content{
        margin: 0px;
     }
@@ -155,19 +197,13 @@ td {
         font-size: 16px;
     }
     
-    .btnO:hover{
-        width: 116px;
-        height: 32px;
-        font-size: 16px;
-    }
-    
     .econtents{
         position: absolute;
         margin-top: 680px;
     }
 
     .content{
-        height: 1000px;
+        height: 800px;
     }
 
     .box{
