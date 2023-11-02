@@ -2,12 +2,11 @@ import React from "react";
 import { useEffect, useState } from 'react';
 import axios from "axios"
 import { useLocation } from "react-router";
-import { useNavigate } from 'react-router-dom';
+import Navbar from "./navBar";
 import Card from './Card';
 import { useInView } from "react-intersection-observer";
 import './List.css'
 import Mouse from "./mouse"
-import Logo from "./Logo";
 
 function Exh() {
   const location = useLocation();
@@ -15,7 +14,6 @@ function Exh() {
   const [searchData, setSearchData] = useState([]);
   const [ref, inView] = useInView();
   const [page, setPage] = useState(0);
-  const navigate = useNavigate();
 
   const fetchData = () => {
     axios.get(
@@ -42,25 +40,17 @@ function Exh() {
     <div>
      <div className="box">
       <Mouse/>
-      <header className='title'>
-        <Logo/>
-       </header>
-       <h2 className="header"> { search } 's EVENT</h2>
+      <Navbar/>
+      <header>
+        <span className="header"> ❤ { search } 's EVENT ❤ </span>
+      </header>
         <div className="content">
           <main className="list">
             <div className="ctitle">
-                <button className="cbutton" onClick={() => navigate(`/Search/${search}`, {state:{search : search, }}
-                  ) }>전체보기</button>
-                <button className="cbutton" onClick={() => navigate(`/Search/${search}/cafe`, {state:{search : search, }}
-                  ) }>카페</button>
-                <button className="cbutton" onClick={() => navigate(`/Search/${search}/exhibition`, {state:{search : search, }}
-                  ) }>전시회</button>
-                <button className="cbutton" onClick={() => navigate(`/Search/${search}/event`, {state:{search : search, }}
-                  ) }>이벤트</button>
                 {searchData && searchData.map((post) => (
                    <Card key={post.pk} {...post} />  // 잔여연산자 사용
                   ))}
-                <div className = "load" ref={ref}>안녕</div>
+                <div className = "load" ref={ref}>　</div>
             </div>
           </main>  
         </div>
