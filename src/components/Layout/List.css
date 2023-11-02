@@ -1,42 +1,4 @@
-
 .load{
-    color: white;
+    color: none;
 }
 
-.cbutton{
-    margin-left: 20px;
-    margin-bottom: 40px;
-    width: 200px;
-    height: 56px;
-    background: #ffffff;
-    border: 2.5px solid black;
-    font-size: 24px;
-    font-style: bold;
-}
-
-.cbutton:hover{
-    margin-left: 20px;
-    margin-bottom: 40px;
-    width: 200px;
-    height: 56px;
-    background: rgb(234, 77, 163);
-    color: #ffffff;
-    border: 2.5px solid black;
-    font-size: 24px;
-    font-style: bold;
-}
-
-@media screen and (max-width:780px){
-    .cbutton{
-        width: 116px;
-        font-size: 14px;
-        height: 32px;
-    }
-
-    .cbutton:hover{
-        width: 116px;
-        font-size: 14px;
-        height: 32px;
-    }
-
-}
