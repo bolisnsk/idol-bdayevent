@@ -6,7 +6,10 @@ import { useLocation } from "react-router";
 import { useNavigate } from 'react-router-dom';
 import Card from './Card';
 import { useInView } from "react-intersection-observer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import './List.css'
+import styled from "styled-components";
 
 function List() {
   const location = useLocation();
@@ -14,8 +17,7 @@ function List() {
   const [searchData, setSearchData] = useState([]);
   const [ref, inView] = useInView();
   const [page, setPage] = useState(0);
-  const navigate = useNavigate();
-
+  
   const fetchData = () => {
     axios.get(
       ` http://127.0.0.1:8000/near_and_dear/post/?search=${search}&offset=${
@@ -36,21 +38,13 @@ function List() {
     }
   }, [inView]);
 
-
+ 
   return (
     <div>
-      <button className="cbutton" onClick={() => navigate(`/Search/${search}`, {state:{search : search, }}
-           ) }>전체보기</button>
-      <button className="cbutton" onClick={() => navigate(`/Search/${search}/cafe`, {state:{search : search, }}
-           ) }>카페</button>
-      <button className="cbutton" onClick={() => navigate(`/Search/${search}/exhibition`, {state:{search : search, }}
-           ) }>전시회</button>
-      <button className="cbutton" onClick={() => navigate(`/Search/${search}/event`, {state:{search : search, }}
-           ) }>이벤트</button>
        {searchData && searchData.map((post) => (
         <Card key={post.pk} {...post} />  // 잔여연산자 사용
       ))}
-     <div className = "load" ref={ref}>안녕</div>
+     <div className = "load" ref={ref}>　</div>
     </div>
     
   );
