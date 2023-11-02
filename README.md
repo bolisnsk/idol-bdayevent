@@ -25,11 +25,12 @@
 <img width="200" height="400" src="https://github.com/bolisnsk/idol-bdayevent/assets/50792699/623a1215-dce3-4ba1-9c2c-e347744f9f3f"/>
 
 ### 2. 이벤트 리스트 화면
-![List](https://github.com/bolisnsk/idol-bdayevent/assets/50792699/7b953e64-cf57-44fb-9093-a56034876bd1)
+![List](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/b110cb09-0224-4ec4-a9f1-e390fde3ebaf)
 <li> 각 버튼으로 카페, 전시회, 이벤트 결과만 볼 수 있음 </li>
 <li> 데이터를 4개씩 불러오는 무한 스크롤로 구현 </li>
 <li> Top 버튼으로 상단으로 이동, 로고 클릭으로 메인화면으로 돌아갈 수 있음 </li> <br/>
 (23.11.02. 리스트 화면 디자인 수정, 네비게이션바 추가)
+![List](https://github.com/bolisnsk/idol-bdayevent/assets/50792699/7b953e64-cf57-44fb-9093-a56034876bd1)
 <img width="225" alt="listm" src="https://github.com/bolisnsk/idol-bdayevent/assets/50792699/c1716292-eef0-448a-8935-7371f4351856">
 <img width="223" alt="listn" src="https://github.com/bolisnsk/idol-bdayevent/assets/50792699/6c0c1cb4-5741-48da-a601-fb26a97a9a84"> <br/>
 
