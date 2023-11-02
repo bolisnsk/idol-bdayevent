@@ -11,7 +11,7 @@
     padding : 16px 16px;
     color: black;
     background: transparent;
-    border: 2px solid black;
+    border: 1.5px solid black;
     border-radius: 50%;
     outline: none;
     cursor: pointer;
@@ -19,7 +19,5 @@
   }
 
   #top:hover{
-    color: white;
-    background-color :rgb(234, 77, 163);
-    border: 2px solid rgb(234, 77, 163);
+    background-color :rgb(255, 237, 241);
   }
