@@ -30,7 +30,6 @@
 <li> 데이터를 4개씩 불러오는 무한 스크롤로 구현 </li>
 <li> Top 버튼으로 상단으로 이동, 로고 클릭으로 메인화면으로 돌아갈 수 있음 </li> <br/>
 (23.11.02. 리스트 화면 디자인 수정, 네비게이션바 추가)
-<img width="1277" alt="list" src="https://github.com/bolisnsk/idol-bdayevent/assets/50792699/7b953e64-cf57-44fb-9093-a56034876bd1">
 <img width="225" alt="listm" src="https://github.com/bolisnsk/idol-bdayevent/assets/50792699/c1716292-eef0-448a-8935-7371f4351856">
 <img width="223" alt="listn" src="https://github.com/bolisnsk/idol-bdayevent/assets/50792699/6c0c1cb4-5741-48da-a601-fb26a97a9a84"> <br/>
 
