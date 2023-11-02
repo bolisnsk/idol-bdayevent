@@ -22,7 +22,7 @@
 <li> 엔터로 검색 결과 넘기기 가능</li>
 <li> Fuzzywuzzy(유사도 검색)을 이용하여 아이돌명 '자윤'과 '윤'과 검색결과가 겹치는 경우, 멤버명 '레이'의 검색 결과에 가게명 '포토레이블'이 포함되는 등의 문제를 개선 </li> <br/>
 (23.11.02. 모바일 화면 수정)
-![MainM](https://github.com/bolisnsk/idol-bdayevent/assets/50792699/623a1215-dce3-4ba1-9c2c-e347744f9f3f)
+<img width="100%" src="https://github.com/bolisnsk/idol-bdayevent/assets/50792699/623a1215-dce3-4ba1-9c2c-e347744f9f3f"/>
 
 ### 2. 이벤트 리스트 화면
 ![List](https://github.com/bolisnsk/idol-bdayevent/assets/65267675/b110cb09-0224-4ec4-a9f1-e390fde3ebaf)
